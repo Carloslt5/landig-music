@@ -565,6 +565,10 @@ footer {
     .active {
         height: 80vh;
     }
+    .nav_li a {
+        margin-left: 0em;
+    }
+    
 
     .visual_text {
         width: 100%;
