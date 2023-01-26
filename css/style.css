@@ -523,6 +523,15 @@ footer {
 }
 
 @media screen and (max-width: 48em) {
+    .header-video{
+        background-image: url(../img/dano_header01.jpg); 
+        background-position: center top;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    video{
+        display: none;
+    }
     #menu-movil {
         display: block;
     }
