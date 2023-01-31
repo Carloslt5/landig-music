@@ -80,12 +80,15 @@ h5 {
 }
 
 .header_arrow {
-    bottom: .5em;
+    bottom: .1em;
     color: #fff;
-    font-size: 2em;
     opacity: .5;
     position: absolute;
     transition: all .5s ease;
+    width: 2em;
+}
+#down-arrow{
+    fill: var(--color-g-100);
 }
 
 .header_arrow:hover {
@@ -97,6 +100,7 @@ h5 {
     background: #305230;
     height: 100vh;
     left: 0;
+    mix-blend-mode: overlay;
     opacity: .5;
     position: absolute;
     top: 0;
@@ -151,18 +155,19 @@ h5 {
 }
 
 #logo {
-    width: 4em;
+    width: 3em;
 }
 
 #menu-movil {
     background: none;
     border: none;
     display: none;
-    font-size: 3em;
     margin: 0;
     padding: 0;
 }
-
+#bars_menu{
+    width: 2em;
+}
 .nav_ul {
     align-items: center;
     display: flex;
@@ -537,7 +542,7 @@ footer {
     }
 
     .container_menu {
-        height: 4.6875em;
+        height: 3.6875em;
         left: 0;
         position: relative;
         top: 0;
