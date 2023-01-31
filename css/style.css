@@ -20,7 +20,7 @@ html {
 }
 
 body {
-    background-color: #f6eff2;
+    background-color: var(--color-g-100);
     font-family: 'Kanit', sans-serif;
     font-weight: 100;
     margin: 0;
@@ -41,11 +41,11 @@ img {
 }
 
 h1 {
-    color: #fff;
+    color: var(--color-g-100);
     font-size: 4em;
-    margin: 0;
+    line-height: .75em;
+    margin: 0 0 .5em;
     text-align: center;
-
 }
 
 h2 {
@@ -55,11 +55,10 @@ h2 {
 }
 
 h3 {
-    color: #fff;
+    color: var(--color-g-100);
     font-size: 2em;
     font-weight: 100;
     margin: 0;
-
 }
 
 h5 {
@@ -69,7 +68,7 @@ h5 {
 .header {
     align-items: center;
     align-items: center;
-    color: #fff;
+    color: var(--color-g-100);
     display: flex;
     height: 100vh;
     justify-content: center;
@@ -81,7 +80,7 @@ h5 {
 
 .header_arrow {
     bottom: .1em;
-    color: #fff;
+    color: var(--color-g-100);
     opacity: .5;
     position: absolute;
     transition: all .5s ease;
@@ -261,7 +260,7 @@ h5 {
 }
 
 .disc {
-    background-color: #f6eff2;
+    background-color: var(--color-g-100);
     border-radius: 0.625em;
     margin-top: 3em;
     padding: 0.625em;
@@ -323,7 +322,7 @@ h5 {
 }
 
 #multimedia {
-    background-color: #d9e8da;
+    background-color: var(--color-g-200);
     padding: 6.25em 0;
 }
 
@@ -380,7 +379,7 @@ h5 {
 }
 
 .carousel-seat {
-    background: #ddd;
+    background: var(--color-g-100);
     flex: 1 0 100%;
     order: 2;
 }
@@ -421,7 +420,8 @@ h5 {
     background-color: var(--color-g-400);
     border: 0;
     border-radius: 0.625em;
-    color: #eee;
+    color: var(--color-g-100);
+    cursor: pointer;
     padding: 1em 3em;
 }
 
@@ -450,7 +450,7 @@ h5 {
 }
 
 #gallery {
-    background-color: #f6eff2;
+    background-color: var(--color-g-100);
     display: flex;
     flex-flow: column nowrap;
 }
@@ -492,7 +492,7 @@ h5 {
 }
 
 .contacto_item {
-    background-color: #f6eff2;
+    background-color: var(--color-g-100);
     border-radius: 0.625em;
     display: flex;
     flex-direction: column;
@@ -521,12 +521,15 @@ h5 {
 }
 
 footer {
-    background-color: #133234;
-    color: #fff;
+    background-color: var(--color-g-400);
+    color: var(--color-g-100);
     padding: 1em 5%;
     text-align: center;
 }
-
+footer a{
+    font-weight: bold;
+    text-decoration: none;
+}
 @media screen and (max-width: 48em) {
     .header-video{
         background-image: url(../img/dano_header01.jpg); 
