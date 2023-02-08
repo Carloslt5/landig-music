@@ -307,7 +307,7 @@ small, .text_small {
     transition: all 0.5s ease;
     width: 100%;
   }
-  .nav_a {
+  .nav_li a {
     margin-left: 0em;
   }
   .bg_menu {
