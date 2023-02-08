@@ -1,0 +1,71 @@
+@use '../_vars.sass' as v
+
+#down-arrow 
+    fill: v.$color-g-100    
+.header 
+    align-items: center 
+    align-items: center 
+    color: v.$color-g-100 
+    display: flex 
+    height: 100vh 
+    justify-content: center
+    &_text
+        text-align: center
+    &_arrow 
+        bottom: 1em 
+        color: v.$color-g-100  
+        opacity: .5 
+        position: absolute 
+        transition: all .5s ease 
+        width: 2em 
+        &:hover 
+            opacity: 1 
+            transform: translateY(-5px) 
+    &_h3
+        font-weight: 100
+    &_overlay 
+        background: v.$color-g-300 
+        height: 100vh 
+        left: 0 
+        mix-blend-mode: multiply 
+        position: absolute 
+        top: 0 
+        width: 100% 
+        z-index: -1 
+    &_video 
+        height: 100vh 
+        left: 0 
+        overflow: hidden 
+        position: absolute 
+        top: 0 
+        width: 100% 
+        z-index: -2 
+
+.header_video video 
+    left: 50% 
+    min-height: 100% 
+    min-width: 100% 
+    object-fit: cover 
+    position: absolute 
+    top: 50% 
+    transform: translateX(-50%) translateY(-50%)
+
+.header_video img
+    object-fit: cover
+    height: 100%
+    display: none
+
+@media screen and (max-width: 48em) 
+    .header_video
+        background-image: url(../img/dano_header01.jpg) 
+        background-position: center top
+        background-repeat: no-repeat
+        background-size: cover
+    video
+        display: none
+    
+@media screen and (max-width: 30em)
+    .header_h1
+        font-size: 18vw
+    .header_h3
+        font-size: 10vw

@@ -1,0 +1,108 @@
+@use '../_vars.sass' as v
+
+#multimedia
+    background-color: v.$color-g-200
+    padding: 6.25em 0
+
+/* carousel */
+#multimedia .container
+    margin: 0 auto
+    overflow: hidden
+    width: 95%
+.carousel
+    display: flex
+    left: -100%
+    list-style: none
+    margin: 0
+    padding: 0
+    position: relative
+    transform: translateX(100%)
+
+@media (min-width: 30em)
+    .carousel
+        left: -50%
+        transform: translateX(50%)
+
+@media (min-width: 48em)
+    .carousel
+        left: -33.33333%
+        transform: translateX(33.33333%)
+    
+.carousel.is-reversing
+    transform: translateX(-100%)
+
+
+@media (min-width: 30em)
+    .carousel.is-reversing
+        transform: translateX(-50%)
+    
+@media (min-width: 48em)
+    .carousel.is-reversing
+        transform: translateX(-33.33333%)
+    
+.carousel.is-set
+    transform: none
+    transition: transform 0.5s ease-in-out
+
+.carousel-seat
+    background: v.$color-g-100
+    flex: 1 0 100%
+    order: 2
+
+.carousel-seat:nth-child(even)
+    background: #d5d5d5
+
+
+@media screen and (min-width: 30em)
+    .carousel-seat
+        flex-basis: 50%
+    
+@media screen and (min-width: 48em)
+    .carousel-seat
+        flex-basis: 33.33333%
+    
+.carousel-seat.is-ref
+    order: 1
+
+.controls
+    align-items: center
+    display: flex
+    flex-flow: row nowrap
+    gap: 1em
+    justify-content: center
+    margin: auto
+    margin-bottom: 4em
+    padding: 1em 0 0 0
+    width: 100%
+
+
+.controls button
+    background-color: v.$color-g-400
+    border: 0
+    border-radius: 0.625em
+    color: v.$color-g-100
+    cursor: pointer
+    padding: 1em 3em
+
+
+.controls button:hover,
+.controls button:focus
+    background-color: v.$color-g-100
+    color: v.$color-g-400
+
+
+.embed-container 
+    height: 0
+    max-width: 100%
+    overflow: hidden
+    padding-bottom: 56.25%
+    position: relative
+
+.embed-container iframe,
+.embed-container object,
+.embed-container embed 
+    height: 100%
+    left: 0
+    position: absolute
+    top: 0
+    width: 100%

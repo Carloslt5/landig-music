@@ -1,0 +1,94 @@
+@use '../_vars.sass' as v
+
+#logo
+    width: 3em
+
+#bars_menu
+    width: 2em
+
+#menu-movil 
+    background: none
+    border: none
+    display: none
+    margin: 0
+    padding: 0
+
+.container_menu
+    margin: 1em auto
+    width: 95%
+    &_wrap
+        align-items: center
+        backdrop-filter: blur(10px)
+        border-radius: 0.625em
+        display: flex
+        flex-flow: row wrap
+        justify-content: space-between
+        padding: 0.625em
+        top: 0
+        width: 100%
+
+.nav
+    &_ul 
+        align-items: center
+        display: flex
+        flex-flow: row wrap
+        justify-content: flex-end
+        list-style-type: none
+        margin: 0
+        padding: 0
+    &_li a 
+        color: #000
+        font-weight: 900
+        margin-left: 2em
+        text-decoration: none
+        &:hover 
+            text-decoration: underline
+
+.sticky
+    background-color: #d9e8da83
+    border-radius: 0.625em
+    position: sticky
+    top: .8em
+    width: 95%
+    z-index: 2
+
+@media screen and (max-width: 48em)
+    #menu-movil 
+        display: block
+
+    .container_menu 
+        height: 3.6875em
+        left: 0
+        position: relative
+        top: 0
+
+    .container_menu_wrap
+        border-radius: 0.625em
+        left: 0
+        position: absolute
+        top: 0
+        transition: all 1s ease
+        z-index: 2
+    .nav 
+        width: 100%
+        &_ul 
+            align-items: center
+            flex-flow: column nowrap
+            height: 0px
+            justify-content: space-evenly
+            left: 0
+            overflow: hidden
+            top: 4.6875em
+            transition: all .5s ease
+            width: 100%
+        &_a 
+            margin-left: 0em
+
+    .bg_menu 
+        background-color: #829d948e
+    .active 
+        height: 80vh
+        
+
+    
+    

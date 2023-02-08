@@ -6,7 +6,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="gallery/simple-lightbox.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@100;300;900&display=swap" rel="stylesheet">
@@ -36,8 +35,8 @@
                 </g>
             </svg>
         </a>
-        <div class="header-overlay"></div>
-        <div class="header-video">
+        <div class="header_overlay"></div>
+        <div class="header_video">
             <video autoplay muted loop preload>
                 <source src="img/dano_home-compress.mp4" type="video/mp4" />
             </video>
@@ -45,8 +44,11 @@
     </header>
     <div id="anclaje_menu"></div>
     <div class="container_menu">
-        <div class="wrap-menu">
-            <img id="logo" src="img/logo.svg" alt="logotipo">
+        <div class="container_menu_wrap">
+            <div class="container_logo">
+                <img id="logo" src="img/logo.svg" alt="logotipo" >
+            </div>
+            
             <button id="menu-movil">
                 <svg version="1.1" id="bars_menu" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
                     viewBox="0 0 1792 1792" xml:space="preserve">
@@ -72,7 +74,7 @@
     <main>
         <section id="biografia">
             <div class="wrap" id="header_bg">
-                <div class="block_visual fade-up">
+                <div class="visual fade-up">
                     <div class="visual_text">
                         <h2 class="visual_h2">BIOGRAFÍA</h2>
                         <p>Id nemo modi <strong>Et distinctio</strong> est esse veniam est placeat assumenda? Qui
@@ -87,16 +89,17 @@
                                 odio</em> qui saepe cumque rem assumenda delectus? Eum nulla possimus ut omnis
                             reprehenderitQui assumenda est voluptatem sunt sit autem voluptatibus non aperiam modi.
                         </p>
+                        <a class="btn-mas" href="#discografia">VER MÁS</a>
                     </div>
-                    <a class="btn-mas" href="#discografia">VER MÁS</a>
+                    
                 </div>
             </div>
         </section>
         <div id="anclaje_disco"></div>
         <section id="discografia">
             <div class="marquee">
-                <div class="track">
-                    <div class="content">
+                <div class="marquee_track">
+                    <div class="marquee_content">
                         <h2>DISCOGRAFIA <span class="outline">DISCOGRAFIA</span>
                             DISCOGRAFIA <span class="outline">DISCOGRAFIA</span>
                             DISCOGRAFIA <span class="outline">DISCOGRAFIA</span>
@@ -112,115 +115,115 @@
                     <div class="disc fade-up">
                         <div class="disc_container">
                             <div class="disc_img">
-                                <a href="img/disc/fly.jpg"><img src="img/disc/fly.jpg" alt=""></a>
+                                <img src="img/disc/fly.jpg" alt="">
                             </div>
                             <h4>Fly Ass Music. (2022)</h4>
                             <p>Dano y Gese Da O.</p>
                             <div class="disc_logo">
-                                <a href="https://open.spotify.com/album/6n3OY032mvi2siXXnisC77?si=ZVxzosXuThmmhBbOSALy7g" target="_blank"><img class="icon_rrss" src="img/logo-spotify.svg" alt="spotify" loading="lazy"></a>
-                                <a href="https://music.apple.com/es/album/fly-ass-music-ep/1658648473" target="_blank"><img class="icon_rrss" src="img/logo-_apple.svg" alt="apple music" loading="lazy"></a>
-                                <a href="https://tidal.com/browse/album/265092947" target="_blank"><img class="icon_rrss" src="img/logo-tidal.svg" alt="tidal" loading="lazy"></a>
-                                <a href="https://www.youtube.com/watch?v=CBwn1t3JHKE" target="_blank"><img class="icon_rrss" src="img/logo-youtube.svg" alt="youtube" loading="lazy"></a>
+                                <a href="https://open.spotify.com/album/6n3OY032mvi2siXXnisC77?si=ZVxzosXuThmmhBbOSALy7g" target="_blank"><img class="icon_rrss" src="img/logo-spotify.svg" alt="spotify"></a>
+                                <a href="https://music.apple.com/es/album/fly-ass-music-ep/1658648473" target="_blank"><img class="icon_rrss" src="img/logo-_apple.svg" alt="apple music"></a>
+                                <a href="https://tidal.com/browse/album/265092947" target="_blank"><img class="icon_rrss" src="img/logo-tidal.svg" alt="tidal"></a>
+                                <a href="https://www.youtube.com/watch?v=CBwn1t3JHKE" target="_blank"><img class="icon_rrss" src="img/logo-youtube.svg" alt="youtube"></a>
                             </div>
                         </div>
                     </div>
                     <div class="disc fade-up">
                         <div class="disc_container">
                             <div class="disc_img">
-                                <a href="img/disc/outlaws.jpg"><img src="img/disc/outlaws.jpg" alt=""></a>
+                                <img src="img/disc/outlaws.jpg" alt="">
                             </div>
                             <h4>Outlaws. (2021)</h4>
                             <p>Dheformer Galinier, Dano & N-Wise Allah</p>
                             <div class="disc_logo">
-                                <a href="https://open.spotify.com/album/6nPNtu9w5v7giCBVcbOVp0?si=ggQzxa33QqaDCjHFBOoJcg" target="_blank"><img class="icon_rrss" src="img/logo-spotify.svg" alt="" loading="lazy"></a>
-                                <a href="https://music.apple.com/es/album/outlaws/1560953206" target="_blank"><img class="icon_rrss" src="img/logo-_apple.svg" alt="" loading="lazy"></a>
-                                <a href="https://tidal.com/browse/album/179050540" target="_blank"><img class="icon_rrss" src="img/logo-tidal.svg" alt="" loading="lazy"></a>
-                                <a href="https://youtube.com/playlist?list=OLAK5uy_nKbNuxLayDD8M6dEh4KljbqTbOz-RLZ0g" target="_blank"><img class="icon_rrss" src="img/logo-youtube.svg" alt="" loading="lazy"></a>
+                                <a href="https://open.spotify.com/album/6nPNtu9w5v7giCBVcbOVp0?si=ggQzxa33QqaDCjHFBOoJcg" target="_blank"><img class="icon_rrss" src="img/logo-spotify.svg" alt=""></a>
+                                <a href="https://music.apple.com/es/album/outlaws/1560953206" target="_blank"><img class="icon_rrss" src="img/logo-_apple.svg" alt=""></a>
+                                <a href="https://tidal.com/browse/album/179050540" target="_blank"><img class="icon_rrss" src="img/logo-tidal.svg" alt=""></a>
+                                <a href="https://youtube.com/playlist?list=OLAK5uy_nKbNuxLayDD8M6dEh4KljbqTbOz-RLZ0g" target="_blank"><img class="icon_rrss" src="img/logo-youtube.svg" alt=""></a>
                             </div>
                         </div>
                     </div>
                     <div class="disc fade-up">
                         <div class="disc_container">
                             <div class="disc_img">
-                                <a href="img/disc/itsmo.jpg"><img src="img/disc/itsmo.jpg" alt=""></a>
+                                <img src="img/disc/itsmo.jpg" alt="">
                             </div>
                             <h4>Istmo. (2019)</h4>
                             <p>Dano & $kyhook.</p>
                             <div class="disc_logo">
-                                <a href="https://open.spotify.com/album/464iXBDj4uTNqCMKw2avJB?si=_UKyzrNORZmnfprbp6onjg" target="_blank"><img class="icon_rrss" src="img/logo-spotify.svg" alt="" loading="lazy"></a>
-                                <a href="https://music.apple.com/es/album/istmo/1451663605" target="_blank"><img class="icon_rrss" src="img/logo-_apple.svg" alt="" loading="lazy"></a>
-                                <a href="https://tidal.com/browse/album/102840061" target="_blank"><img class="icon_rrss" src="img/logo-tidal.svg" alt="" loading="lazy"></a>
-                                <a href="https://youtube.com/playlist?list=PLZGm383EvBjJE724rB4LS4Z_IVGrc5hpk" target="_blank"><img class="icon_rrss" src="img/logo-youtube.svg" alt="" loading="lazy"></a>
+                                <a href="https://open.spotify.com/album/464iXBDj4uTNqCMKw2avJB?si=_UKyzrNORZmnfprbp6onjg" target="_blank"><img class="icon_rrss" src="img/logo-spotify.svg" alt=""></a>
+                                <a href="https://music.apple.com/es/album/istmo/1451663605" target="_blank"><img class="icon_rrss" src="img/logo-_apple.svg" alt=""></a>
+                                <a href="https://tidal.com/browse/album/102840061" target="_blank"><img class="icon_rrss" src="img/logo-tidal.svg" alt=""></a>
+                                <a href="https://youtube.com/playlist?list=PLZGm383EvBjJE724rB4LS4Z_IVGrc5hpk" target="_blank"><img class="icon_rrss" src="img/logo-youtube.svg" alt=""></a>
                             </div>
                         </div>
                     </div>
                     <div class="disc fade-up">
                         <div class="disc_container">
                             <div class="disc_img">
-                                <a href="img/disc/oceanica.jpg"><img src="img/disc/oceanica.jpg" alt=""></a>
+                                <img src="img/disc/oceanica.jpg" alt="">
                             </div>
                             <h4>Oceánica. (2017)</h4>
                             <p>Elio Toffana, Lou Fresco & Dano.</p>
                             <div class="disc_logo">
-                                <a href="https://open.spotify.com/album/7zFuRRttAFsfoezwcoKuox?si=m9-c_e0XQ4yyZj4b0KMRlg"target="_blank"><img class="icon_rrss" src="img/logo-spotify.svg" alt="" loading="lazy"></a>
-                                <a href="https://music.apple.com/es/album/oce%C3%A1nica-ep/1514457680"target="_blank"><img class="icon_rrss" src="img/logo-_apple.svg" alt="" loading="lazy"></a>
-                                <a href="https://tidal.com/browse/album/142267016" target="_blank"><img class="icon_rrss" src="img/logo-tidal.svg" alt="" loading="lazy"></a>
-                                <a href="https://youtube.com/playlist?list=OLAK5uy_lKdkIo4VmaxbofakJVNZG5sepK6WFYf6c"target="_blank"><img class="icon_rrss" src="img/logo-youtube.svg" alt="" loading="lazy"></a>
+                                <a href="https://open.spotify.com/album/7zFuRRttAFsfoezwcoKuox?si=m9-c_e0XQ4yyZj4b0KMRlg"target="_blank"><img class="icon_rrss" src="img/logo-spotify.svg" alt=""></a>
+                                <a href="https://music.apple.com/es/album/oce%C3%A1nica-ep/1514457680"target="_blank"><img class="icon_rrss" src="img/logo-_apple.svg" alt=""></a>
+                                <a href="https://tidal.com/browse/album/142267016" target="_blank"><img class="icon_rrss" src="img/logo-tidal.svg" alt=""></a>
+                                <a href="https://youtube.com/playlist?list=OLAK5uy_lKdkIo4VmaxbofakJVNZG5sepK6WFYf6c"target="_blank"><img class="icon_rrss" src="img/logo-youtube.svg" alt=""></a>
                             </div>
                         </div>
                     </div>
                     <div class="disc fade-up">
                         <div class="disc_container">
                             <div class="disc_img">
-                                <a href="img/disc/braille.jpg"><img src="img/disc/braille.jpg" alt=""></a>
+                                <img src="img/disc/braille.jpg" alt="">
                             </div>
                             <h4>Braille. (2017)</h4>
                             <p>Dano & $kyhook.</p>
                             <div class="disc_logo">
-                                <a href="https://open.spotify.com/album/1oJ5ZZeLd2WxCVcth5iM1s?si=GytkZMbhTDShvgz3OKoYSw" target="_blank"><img class="icon_rrss" src="img/logo-spotify.svg" alt="" loading="lazy"></a>
-                                <a href="https://music.apple.com/es/album/braille-ep/1266676422" target="_blank"><img class="icon_rrss" src="img/logo-_apple.svg" alt="" loading="lazy"></a>
-                                <a href="https://youtube.com/playlist?list=PLpsJ-523B2YP3T_1x1sc6Yz2BY-Ns-QKm" target="_blank"><img class="icon_rrss" src="img/logo-youtube.svg" alt="" loading="lazy"></a>
+                                <a href="https://open.spotify.com/album/1oJ5ZZeLd2WxCVcth5iM1s?si=GytkZMbhTDShvgz3OKoYSw" target="_blank"><img class="icon_rrss" src="img/logo-spotify.svg" alt=""></a>
+                                <a href="https://music.apple.com/es/album/braille-ep/1266676422" target="_blank"><img class="icon_rrss" src="img/logo-_apple.svg" alt=""></a>
+                                <a href="https://youtube.com/playlist?list=PLpsJ-523B2YP3T_1x1sc6Yz2BY-Ns-QKm" target="_blank"><img class="icon_rrss" src="img/logo-youtube.svg" alt=""></a>
                             </div>
                         </div>
                     </div>
                     <div class="disc fade-up">
                         <div class="disc_container">
                             <div class="disc_img">
-                                <a href="img/disc/saturno.jpg"><img src="img/disc/saturno.jpg" alt=""></a>
+                                <img src="img/disc/saturno.jpg" alt="">
                             </div>
                             <h4>Saturno. (2014)</h4>
                             <p>Dano.</p>
                             <div class="disc_logo">
-                                <a href="https://open.spotify.com/album/5xF5wGR3iqFKIXL49hsxUX?si=UqbwNyxARsuJdNV00sF9ng" target="_blank"><img class="icon_rrss" src="img/logo-spotify.svg" alt="" loading="lazy"></a>
-                                <a href="https://music.apple.com/es/album/saturno/1421351845" target="_blank"><img class="icon_rrss" src="img/logo-_apple.svg" alt="" loading="lazy"></a>
-                                <a href="https://youtube.com/playlist?list=OLAK5uy_liajkXtld666MgkpPq4tgOa_WNmzDLqso" target="_blank"><img class="icon_rrss" src="img/logo-youtube.svg" alt="" loading="lazy"></a>
+                                <a href="https://open.spotify.com/album/5xF5wGR3iqFKIXL49hsxUX?si=UqbwNyxARsuJdNV00sF9ng" target="_blank"><img class="icon_rrss" src="img/logo-spotify.svg" alt=""></a>
+                                <a href="https://music.apple.com/es/album/saturno/1421351845" target="_blank"><img class="icon_rrss" src="img/logo-_apple.svg" alt=""></a>
+                                <a href="https://youtube.com/playlist?list=OLAK5uy_liajkXtld666MgkpPq4tgOa_WNmzDLqso" target="_blank"><img class="icon_rrss" src="img/logo-youtube.svg" alt=""></a>
                             </div>
                         </div>
                     </div>
                     <div class="disc fade-up">
                         <div class="disc_container">
                             <div class="disc_img">
-                                <a href="img/disc/equilibrio.jpg"><img src="img/disc/equilibrio.jpg" alt=""></a>
+                                <img src="img/disc/equilibrio.jpg" alt="">
                             </div>
                             <h4>Equilibrio. (2013)</h4>
                             <p>Dano & Emelvi</p>
                             <div class="disc_logo">
-                                <a href="https://open.spotify.com/album/23KA8KvrDXsG8W2jKgyegC?si=Rg0eXa46Tm6Daflm1sUepA" target="_blank"><img class="icon_rrss" src="img/logo-spotify.svg" alt="" loading="lazy"></a>
-                                <a href="https://music.apple.com/es/album/equilibrio/580611086" target="_blank"><img class="icon_rrss" src="img/logo-_apple.svg" alt="" loading="lazy"></a>
-                                <a href="https://tidal.com/browse/album/157773946" target="_blank"><img class="icon_rrss" src="img/logo-tidal.svg" alt="" loading="lazy"></a>
-                                <a href="https://www.youtube.com/playlist?list=PLzXLoxUEwpl_FkllZJRL8cju5Ih22wkcR" target="_blank"><img class="icon_rrss" src="img/logo-youtube.svg" alt="" loading="lazy"></a>
+                                <a href="https://open.spotify.com/album/23KA8KvrDXsG8W2jKgyegC?si=Rg0eXa46Tm6Daflm1sUepA" target="_blank"><img class="icon_rrss" src="img/logo-spotify.svg" alt=""></a>
+                                <a href="https://music.apple.com/es/album/equilibrio/580611086" target="_blank"><img class="icon_rrss" src="img/logo-_apple.svg" alt=""></a>
+                                <a href="https://tidal.com/browse/album/157773946" target="_blank"><img class="icon_rrss" src="img/logo-tidal.svg" alt=""></a>
+                                <a href="https://www.youtube.com/playlist?list=PLzXLoxUEwpl_FkllZJRL8cju5Ih22wkcR" target="_blank"><img class="icon_rrss" src="img/logo-youtube.svg" alt=""></a>
                             </div>
                         </div>
                     </div>
                     <div class="disc fade-up">
                         <div class="disc_container">
                             <div class="disc_img">
-                                <a href="img/disc/cierra-los-ojos-1.jpg"><img src="img/disc/cierra-los-ojos-1.jpg" alt=""></a>
+                                <img src="img/disc/cierra-los-ojos-1.jpg" alt="">
                             </div>
                             <h4>Cierra Los Ojos. (2007)</h4>
                             <p>Dano.</p>
                             <div class="disc_logo">
-                                <a href="https://www.youtube.com/playlist?list=PL4Ktu5Hy-BcgueqV7-dq-xWKUF74oedFM" target="_blank"><img class="icon_rrss" src="img/logo-youtube.svg" alt="" loading="lazy"></a>
+                                <a href="https://www.youtube.com/playlist?list=PL4Ktu5Hy-BcgueqV7-dq-xWKUF74oedFM" target="_blank"><img class="icon_rrss" src="img/logo-youtube.svg" alt=""></a>
                             </div>
                         </div>
                     </div>
@@ -282,44 +285,55 @@
                 </ul>
             </div>
             <div class='controls'>
-                <button class='toggle' data-toggle='prev'>Prev</button>
-                <button class='toggle' data-toggle='next'>Next</button>
+                <button class='controls_button toggle' data-toggle='prev'>Prev</button>
+                <button class='controls_button toggle' data-toggle='next'>Next</button>
             </div>
             <div class="wrap" id="gallery">
                 <div class="gallery_flex top">
-                    <div class="gallery_img fade-up ">
-                        <a href="img/gallery/dano00.jpg"><img src="img/gallery/dano00_mini.jpg" alt=""></a>
+                    <div class="gallery_block fade-up">
+                        <a href="img/gallery/dano00.jpg"><img class="gallery_block_img" src="img/gallery/dano00_mini.jpg" alt=""></a>
                     </div>
-                    <div class="gallery_img fade-up">
-                        <a href="img/gallery/dano01.jpg"><img src="img/gallery/dano01_mini.jpg" alt=""></a>
+                    <div class="gallery_block fade-up">
+                        <a href="img/gallery/dano01.jpg"><img class="gallery_block_img" src="img/gallery/dano01_mini.jpg" alt=""></a>
                     </div>
-                    <div class="gallery_img fade-up">
-                        <a href="img/gallery/dano02.jpg"><img src="img/gallery/dano02_mini.jpg" alt=""></a>
+                    <div class="gallery_block fade-up">
+                        <a href="img/gallery/dano02.jpg"><img class="gallery_block_img" src="img/gallery/dano02_mini.jpg" alt=""></a>
                     </div>
-                    <div class="gallery_img fade-up">
-                        <a href="img/gallery/dano03.jpg"><img src="img/gallery/dano03_mini.jpg" alt=""></a>
+                    <div class="gallery_block fade-up">
+                        <a href="img/gallery/dano03.jpg"><img class="gallery_block_img" src="img/gallery/dano03_mini.jpg" alt=""></a>
                     </div>
                 </div>
-                <div class="gallery_flex">
-                    <div class="gallery_img fade-up">
-                        <a href="img/gallery/dano04.jpg"><img src="img/gallery/dano04_mini.jpg" alt=""></a>
+                <div class="gallery_flex down">
+                    <div class="gallery_block fade-up">
+                        <a href="img/gallery/dano04.jpg"><img class="gallery_block_img" src="img/gallery/dano04_mini.jpg" alt=""></a>
                     </div>
-                    <div class="gallery_img fade-up">
-                        <a href="img/gallery/dano05.jpg"><img src="img/gallery/dano05_mini.jpg" alt=""></a>
+                    <div class="gallery_block fade-up">
+                        <a href="img/gallery/dano05.jpg"><img class="gallery_block_img" src="img/gallery/dano05_mini.jpg" alt=""></a>
                     </div>
-                    <div class="gallery_img fade-up">
-                        <a href="img/gallery/dano06.jpg"><img src="img/gallery/dano06_mini.jpg" alt=""></a>
+                    <div class="gallery_block fade-up">
+                        <a href="img/gallery/dano06.jpg"><img class="gallery_block_img" src="img/gallery/dano06_mini.jpg" alt=""></a>
                     </div>
-                    <div class="gallery_img fade-up">
-                        <a href="img/gallery/dano07.jpg"><img src="img/gallery/dano07_mini.jpg" alt=""></a>
+                    <div class="gallery_block fade-up">
+                        <a href="img/gallery/dano07.jpg"><img class="gallery_block_img" src="img/gallery/dano07_mini.jpg" alt=""></a>
                     </div>
+                </div>
+            </div>
+            <div class="lightbox">
+                <button class="cerrar">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512">
+                        <path d="M310.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L160 210.7 54.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L114.7 256 9.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L160 301.3 265.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L205.3 256 310.6 150.6z"/></svg>
+                </button>
+                <div class="lightbox_container">
+                    <!-- <button class="lightbox_arrow" id="previmg" ><img src="img/icons/arrow-left.svg" alt=""></button> -->
+                    <img src="img/gallery/dano00.jpg" alt="Imagen 1" class="grande" loading="lazy">
+                    <!-- <button class="lightbox_arrow" id="nextimg"><img src="img/icons/arrow-right.svg" alt=""></button> -->
                 </div>
             </div>
         </section>
         <section id="contacto">
             <div class="marquee">
-                <div class="track">
-                    <div class="content">
+                <div class="marquee_track">
+                    <div class="marquee_content">
                         <h2>CONTACTO <span class="outline">CONTACTO</span>
                             CONTACTO <span class="outline">CONTACTO</span>
                             CONTACTO <span class="outline">CONTACTO</span>
@@ -332,23 +346,27 @@
             </div>
             <div class="wrap">
                 <div class="contacto_wrap">
-                    <div class="contacto_item fade-up mail">
-                        <a href="mailto:" target="_blank" class="contacto_icon"><img src="img/envelope-solid.svg" alt="" loading="lazy"></a>
+                    <div class="contacto_wrap_block mail fade-up ">
+                        <a href="mailto:" target="_blank" class="contacto_wrap_icon">
+                            <img class="contacto_wrap_img" src="img/envelope-solid.svg" alt=""></a>
                         <h5>hello@ziontifik.com.</h5>
                     </div>
-                    <div class="contacto_item fade-up phone">
-                        <a href="https://web.whatsapp.com/" target="_blank" class="contacto_icon"><img src="img/phone-volume-solid.svg" alt="" loading="lazy"></a>
+                    <div class="contacto_wrap_block phone fade-up ">
+                        <a href="https://web.whatsapp.com/" target="_blank" class="contacto_wrap_icon">
+                            <img class="contacto_wrap_img" src="img/phone-volume-solid.svg" alt=""></a>
                         <h5>+34 XXX XX XX XX.</h5>
                     </div>
-                    <div class="contacto_item fade-up rrss">
-                        <a href="#" class="contacto_icon"><img src="img/rss-solid.svg" alt="" loading="lazy"></a>
-                        <div class="contacto_icon">
-                            <a href="https://www.instagram.com/danoziontifik" target="_blank"><img class="icon_rrss" src="img/logo_ig.svg" alt="" loading="lazy"></a>
-                            <a href="https://twitter.com/DanoZiontifik" target="_blank"><img class="icon_rrss" src="img/logo_tw.svg" alt="" loading="lazy"></a>
-                            <a href="https://open.spotify.com/artist/3lIsPQW0jN6sMpiWuiShF0?si=gGFK_Hg6TBaDOu8dfzCbDg" target="_blank"><img class="icon_rrss" src="img/logo-spotify.svg" alt="" loading="lazy"></a>
-                            <a href="https://music.apple.com/es/artist/dano/1454407173" target="_blank"><img class="icon_rrss" src="img/logo-_apple.svg" alt="" loading="lazy"></a>
-                            <a href="https://tidal.com/browse/artist/3601530" target="_blank"><img class="icon_rrss" src="img/logo-tidal.svg" alt="" loading="lazy"></a>
-                            <a href="https://www.youtube.com/@ZiontifikFilms" target="_blank"><img class="icon_rrss" src="img/logo-youtube.svg" alt="" loading="lazy"></a>
+                    <div class="contacto_wrap_block rrss fade-up ">
+                        <a href="#" class="contacto_wrap_icon">
+                            <img class="contacto_wrap_img" src="img/rss-solid.svg" alt="">
+                        </a>
+                        <div class="contacto_rrss">
+                            <a href="https://www.instagram.com/danoziontifik" target="_blank"><img class="icon_rrss" src="img/logo_ig.svg" alt=""></a>
+                            <a href="https://twitter.com/DanoZiontifik" target="_blank"><img class="icon_rrss" src="img/logo_tw.svg" alt=""></a>
+                            <a href="https://open.spotify.com/artist/3lIsPQW0jN6sMpiWuiShF0?si=gGFK_Hg6TBaDOu8dfzCbDg" target="_blank"><img class="icon_rrss" src="img/logo-spotify.svg" alt=""></a>
+                            <a href="https://music.apple.com/es/artist/dano/1454407173" target="_blank"><img class="icon_rrss" src="img/logo-_apple.svg" alt=""></a>
+                            <a href="https://tidal.com/browse/artist/3601530" target="_blank"><img class="icon_rrss" src="img/logo-tidal.svg" alt=""></a>
+                            <a href="https://www.youtube.com/@ZiontifikFilms" target="_blank"><img class="icon_rrss" src="img/logo-youtube.svg" alt=""></a>
                         </div>
                     </div>
                 </div>
@@ -356,17 +374,12 @@
         </section>
     </main>
     <footer>
-        <p>Proyecto realizado por Carlos Liao en  <a href="https://www.aulacreactiva.com/" target="_blank">Aulacreactiva.</a></p>
+        <p>Proyecto realizado por Carlos Liao en  <a href="https://www.aulacreactiva.com/" target="_blank">Aulacreactiva</a></p>
     </footer>
     <script src="js/carousel.js"></script>
     <script src="js/menu-movil.js"></script>
     <script src="js/fade-up.js"></script>
-    <script src="gallery/simple-lightbox.js"></script>
-    <script>
-        (function () {
-            var $gallery = new SimpleLightbox('#gallery a', {});
-        })();
-    </script>
+    <script src="js/lightbox.js"></script>
     <script src="js/sticky-menu.js"></script>
 </body>
 </html>

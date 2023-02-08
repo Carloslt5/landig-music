@@ -1,0 +1,53 @@
+@forward '_reset.sass'
+@forward '_fonts.sass'
+@forward 'partials/_header.sass'
+@forward 'partials/_navbar.sass'
+@forward 'partials/_bio.sass'
+@forward 'partials/_discografia.sass'
+@forward 'partials/_multimedia.sass'
+@forward 'partials/_gallery.sass'
+@forward 'partials/_contact.sass'
+@forward 'partials/_footer.sass'
+@use '_vars.sass' as v
+
+body 
+    background-color: v.$color-g-100
+    font-family: 'Kanit', sans-serif
+
+.wrap 
+    background-color: v.$color-g-100
+    border-radius: 0.625em
+    margin: auto
+    padding: 0.625em
+    width: 95%
+
+.icon_rrss 
+    transition: all .5s ease
+    width: 2em
+    &:hover 
+    transform: translateY(-5px)
+    
+// marquee 
+.marquee 
+    height: 6.25em
+    max-width: 100%
+    overflow-x: hidden
+    position: relative
+    width: 100vw
+    &_track
+        animation: marquee 20s linear infinite
+        position: absolute
+        white-space: nowrap
+        will-change: transform
+    &_content
+        color: v.$color-g-400
+
+@keyframes marquee 
+    from 
+        transform: translateX(0)
+    to 
+        transform: translateX(-50%)
+    
+.outline 
+    color: transparent
+    -webkit-text-stroke: 1px v.$color-g-400

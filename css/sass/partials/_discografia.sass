@@ -1,0 +1,61 @@
+@use '../_vars.sass' as v
+
+#discografia 
+    padding: 6.25em 0
+
+#discografia  .wrap
+    background-color: v.$color-g-200
+
+.disc_wrap 
+    display: flex
+    flex-flow: row wrap
+    justify-content: space-between
+
+.disc 
+    background-color: v.$color-g-100
+    border-radius: 0.625em
+    margin-top: 3em
+    padding: 0.625em
+    width: 24%
+    &_img 
+        border-radius: 0.625em
+        margin: auto
+        overflow: hidden
+        position: relative
+        top: -2em
+        transition: all .5s ease
+        width: 80%
+        &:hover 
+            box-shadow: 0px 5px 10px v.$color-g-400
+            transform: translateY(-5px)
+    &_container h4 
+    &_container p 
+    &_logo 
+        align-items: center
+        display: flex
+        flex-flow: row wrap
+        gap: 1em
+        justify-content: flex-start
+    
+.fade-up 
+    opacity: 0
+    transform: translate(0, 10vh)
+    transition: all 1s ease
+
+.visible 
+    opacity: 1
+    transform: translate(0, 0)
+
+@media screen and (max-width: 48em) 
+    #discografia 
+        padding: 2em 0
+    
+    .disc 
+        width: 49%
+
+@media screen and (max-width: 30em) 
+    .disc 
+        width: 100%
+    
+
+

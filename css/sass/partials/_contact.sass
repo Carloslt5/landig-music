@@ -1,0 +1,54 @@
+@use '../_vars.sass' as v
+
+#contacto 
+    padding: 6.25em 0
+
+#contacto .wrap
+    background-color: v.$color-g-200
+
+.contacto_wrap 
+    align-items: stretch
+    display: flex
+    flex-flow: row wrap
+    justify-content: space-between
+    &_block
+        background-color: v.$color-g-100
+        border-radius: 0.625em
+        display: flex
+        flex-flow: column nowrap
+        justify-content: space-between
+        padding: 1em
+        text-align: center
+        width: calc( 33.3% - .5em )
+        align-items: center
+    &_icon 
+        align-items: center
+        display: flex
+        flex-flow: row wrap
+        justify-content: space-between
+        width: 2em
+        margin-bottom: 1em
+
+.contacto_rrss
+    display: flex
+    flex-flow: row wrap
+    justify-content: space-between
+    align-items: center
+    width: 100%
+    row-gap: .5em
+
+@media screen and (max-width: 48em)
+    #contacto 
+        padding: 2em 0
+    
+    .contacto_wrap_block
+        width: 49%
+    .rrss
+        width: 100%
+        margin-top: .5em
+
+@media screen and (max-width: 30em)
+    .contacto_wrap_block
+        width: 100%
+    .mail
+        margin-bottom: .5em

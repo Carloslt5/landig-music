@@ -1,0 +1,88 @@
+@use '../_vars.sass' as v
+
+#gallery 
+    background-color: v.$color-g-100
+    display: flex
+    flex-flow: column nowrap
+
+.gallery_flex 
+    align-items: center
+    display: flex
+    flex-flow: row wrap
+    justify-content: space-between
+
+.top 
+    margin-bottom: .5em
+
+.gallery_block 
+    border-radius: 0.625em
+    overflow: hidden
+    width: calc( 25% - .5em )
+    &_img
+        transition: all .5s ease
+        &:hover 
+            transform: scale(1.1)
+
+.lightbox
+    position: fixed
+    top: 0
+    left: 0
+    width: 100%
+    height: 100%
+    background: #f6eff2fa
+    z-index: 2
+    display: flex
+    flex-flow: column nowrap
+    justify-content: center
+    align-items: center
+    opacity: 0
+    transform: scale(1.1)
+    transition: all .5s ease
+    pointer-events: none
+.lightbox.activo
+    opacity: 1
+    transform: scale(1)
+    pointer-events: auto
+.lightbox .cerrar
+    width: 1em
+    background: none
+    margin: 0 0 1em
+    cursor: pointer
+    transition: all .3s ease
+    &:hover
+        transform: scale(1.2)
+.lightbox svg
+    fill: v.$color-g-400
+.lightbox .grande
+    width:80%
+    height: 80vh
+    object-fit: contain
+.lightbox_container
+    position: relative
+    display: flex
+    flex-flow: row nowrap
+    justify-content: space-around
+    width: 100vw
+.lightbox_arrow
+    width: 2em
+    background: none
+    transition: all .3s ease
+    &:hover
+        transform: scale(1.2)
+
+#previmg
+
+#nextimg
+
+
+
+
+@media screen and (max-width: 48em)
+    .gallery_flex
+        row-gap: .5em
+    .gallery_block 
+        width: 49%
+
+@media screen and (max-width: 30em)
+    .gallery_block 
+        width: 100%
