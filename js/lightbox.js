@@ -18,7 +18,7 @@ const cerrar   = document.querySelector('.cerrar')
 enlaces.forEach(( cadaEnlace , i )=>{
     enlaces[i].addEventListener('click', ( e )=>{
         e.preventDefault()
-        let ruta = cadaEnlace.querySelector('.gallery_block_img').src
+        let ruta = cadaEnlace.querySelector('.gallery_block a').href
         console.log( ruta ) 
 
         lightbox.classList.add('activo')
