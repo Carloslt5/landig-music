@@ -1,6 +1,6 @@
 
 # Artista musical: Dano Ziontific.
-Proyecto landing page no oficial del artista musical Dano Ziontific, construida bajo Html5, CSS y JavaScript, adapatable a diferentes tamaños de pantalla y dispositivos.
+Proyecto landing page no oficial del artista musical Dano Ziontific, construida bajo Html5, CSS (Sass) y JavaScript, adapatable a diferentes tamaños de pantalla y dispositivos.
 
 
 ## Demo
